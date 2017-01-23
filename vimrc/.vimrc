@@ -5,11 +5,11 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set backspace=indent,eol,start
 syntax enable
 set background=dark
 hi Normal ctermbg=NONE
 set number
-set clipboard=unnamedplus
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
