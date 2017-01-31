@@ -19,6 +19,7 @@ silent! nmap <C-p> :NERDTreeToggle<CR>
 set pastetoggle=<F2>
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
+let g:NERDTreeWinSize = 45
 nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
 nmap <F5> <Plug>(JavaComplete-Imports-Add)
 nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
