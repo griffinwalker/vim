@@ -16,7 +16,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 silent! nmap <C-p> :NERDTreeToggle<CR>
+
 set pastetoggle=<F2>
+
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeWinSize = 45
