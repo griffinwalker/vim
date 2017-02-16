@@ -1,6 +1,7 @@
 let delimitMate_nesting_quotes = ['"','`']
 let delimitMate_quotes = "\" ' ` *"
 let delimitMate_matchpairs = "(:),[:],{:},<:>"
+filetype indent plugin on
 set smartindent
 set tabstop=2
 set shiftwidth=2
@@ -16,9 +17,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 silent! nmap <C-p> :NERDTreeToggle<CR>
-
 set pastetoggle=<F2>
-
 silent! map <F3> :NERDTreeFind<CR>
 let g:NERDTreeMapActivateNode="<F3>"
 let g:NERDTreeWinSize = 45
@@ -61,3 +60,9 @@ vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)
 :set hlsearch
 execute pathogen#infect()
 
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
