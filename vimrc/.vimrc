@@ -7,6 +7,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
+set clipboard=unnamedplus
 syntax enable
 set background=dark
 hi Normal ctermbg=NONE
@@ -66,3 +67,5 @@ map <silent> e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
